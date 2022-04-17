@@ -1,0 +1,1 @@
+<div class="app-footer"><span><?php echo date("Y"); ?></span></div>
