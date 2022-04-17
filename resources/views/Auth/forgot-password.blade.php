@@ -9,7 +9,7 @@
     <meta name="description" content="Login and Register Form HTML Template - developed by 'ceosdesigns' - sold exclusively on 'themeforest.net'">
 	<meta name="author" content="ceosdesigns.sk">
 
-    <title>Dragbox | Forgoy Password</title>
+    <title>Dragbox | Forgot Password</title>
 
 	<!-- // Favicon -->
     <link href="{{ asset('Auth/images/favicon.png') }}" rel="icon">

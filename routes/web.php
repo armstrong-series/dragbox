@@ -20,6 +20,7 @@ Route::get('/logout', [Controller\Auth\LoginController::class, 'logout'])->name(
 Route::get('/reset-password/{token}', [Controller\Auth\ResetPasswordController::class, 'resetPassword'])->name('auth.reset-password');
 Route::post('/reset-password', [Controller\Auth\ResetPasswordController::class,'updatePassword'])->name('auth.update-password');
 Route::post('/recover-password', [Controller\Auth\ForgotPasswordController::class,'recoverPassword'])->name('auth.recover-password');
+Route::get('/forgot-password', [Controller\Auth\ForgotPasswordController::class,'forgotPassword'])->name('auth.forgot-password');
 Route::get('/settings', [Controller\Settings\SettingsController::class,'profile'])->name('settings');
 Route::get('/dashboard',  [Controller\DashboardController::class, 'dashboard'])->name('user.dashboard');
 Route::get('/blockhain',  [Controller\Blockchain\BlockchainController::class, 'pageSection'])->withoutMiddleware(['auth'])->name('page.blockhain');

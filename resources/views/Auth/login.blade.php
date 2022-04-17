@@ -89,7 +89,7 @@
 										<label class="nm-control-label" for="temsAndConditions">Remember me</label>
 									</div>
 
-									<a class="nm-ft-b" href="#">Forgot password?</a>
+									<a class="nm-ft-b" href="{{ route('auth.forgot-password') }}">Forgot password?</a>
 								</div>
 
 								<button type="submit" class="btn btn-block btn-primary nm-btn">Log In</button>
