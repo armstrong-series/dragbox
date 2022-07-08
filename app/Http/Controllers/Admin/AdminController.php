@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Validator;
 use App\Models\User;
+use App\Models\ProductModel;
+use App\Models\ProjectsModel;
 use Illuminate\Support\Facades\Hash;
 use Exception;
 
@@ -23,6 +25,8 @@ class AdminController extends Controller
         try {
             if (Auth::user()->roles === 'super_admin' || Auth::user()->roles === 'support') {
                 $users = User::all();
+                $projects = ProjectsModel::all();
+                $totalProjects = count($projects);
                 $totalUsers = count($users);
                 $teams = User::where('roles', 'team')->get();
                 $supports = User::where('roles', 'supports')->get();
@@ -31,7 +35,8 @@ class AdminController extends Controller
                 $data = [
                     'page' => 'admin',
                     'admin' => 'admin',
-                    'totalUsers' => $totalUsers,
+                    'totalProjects' => $totalProjects,
+                    'totalUsers' => $totalUsers, 
                     'users' => $users,                   
                 ];
                 return view('App.Admin.new-admindashboard', $data);

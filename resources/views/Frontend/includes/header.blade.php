@@ -4,8 +4,8 @@
                 <div class="container-fluid">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="{{ route('frontend.home') }}"><img class="light-version-logo" src="{{ asset('frontend/assets/media/logo-2.svg') }}" alt="logo"></a>
-                            <a href="#"><img class="dark-version-logo" src="{{ asset('frontend/assets/media/logo-3.svg') }}" alt="logo"></a>
+                            <a href="{{ route('frontend.home') }}"><img class="light-version-logo" style="width:150px;" src="{{ asset('dragbox-logo.png') }}" alt="Dragbox"></a>
+                            <a href="{{ route('frontend.home') }}"><img class="dark-version-logo" src="{{ asset('dragbox-logo.png') }}" style="width:150px;" alt="Dragbox"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -13,9 +13,9 @@
                                 <div class="d-block d-lg-none">
                                     <div class="mobile-nav-header">
                                         <div class="mobile-nav-logo">
-                                            <a href="#">
-                                                <img class="light-mode" src="{{ asset('frontend/assets/media/logo-2.svg') }}" alt="Site Logo">
-                                                <img class="dark-mode" src="{{ asset('frontend/assets/media/logo-3.svg') }}" alt="Site Logo">
+                                            <a href="{{ route('frontend.home') }}">
+                                                <img class="light-mode"style="width:150px;" src="{{ asset('dragbox-logo.png') }}" alt="Site Logo">
+                                                <img class="dark-mode" style="width:150px;"src="{{ asset('dragbox-logo.png') }}" alt="Site Logo">
                                             </a>
                                         </div>
                                         <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
@@ -52,31 +52,14 @@
                                         <a href="{{ route('login') }}">Account</a>
                                       
                                     </li>
-                                    <!-- <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Blog</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="single-blog.html">Standard Post</a></li>
-                                            <li><a href="single-blog-gallery.html">Gallery Post</a></li>
-                                            <li><a href="single-blog-video.html">Video Post</a></li>
-                                            <li><a href="single-blog-audio.html">Audio Post</a></li>
-                                            <li><a href="single-blog-quote.html">Quote Post</a></li>
-                                        </ul>
-                                    </li> -->
-                                 
+                                    
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
                         </div>
                         <div class="header-action">
                             <ul class="list-unstyled">
-                                <!-- <li class="sidemenu-btn d-lg-block d-none">
-                                    <button class="btn-wrap btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </li> -->
+                                
                                 <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
                                     <button class="btn-wrap btn-dark" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
                                         <span></span>

@@ -4,11 +4,11 @@
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dragbox | Consortium</title>
+    <title>Dragbox</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/media/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('dragbox.png')}}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/slick.css') }}">

@@ -10,7 +10,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="banner-content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
-                            <h1 class="title">Technology &amp; design studio</h1>
+                            <h1 class="title">Technology is our Emblem</h1>
                             <a href="#" class="axil-btn btn-fill-white btn-large">Explore</a>
                         </div>
                     </div>

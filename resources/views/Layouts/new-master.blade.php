@@ -6,10 +6,10 @@
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Dragbox | Adminstrative Dashboard</title>
+      <!-- <title>Dragbox | Adminstrative Dashboard</title> -->
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="https://templates.iqonic.design/gigz/html/dist/assets/images/favicon.ico" />
+      <link rel="shortcut icon" href="{{ asset('dragbox.png')}}" />
       
       <!-- Library / Plugin Css Build -->
       <link rel="stylesheet" href="{{ asset('main/css/libs.min.css') }}" />
@@ -64,7 +64,7 @@
     <!-- GSAP Animation -->
     <script src="{{ asset('main/js/gsap/gsap.min.js') }}"></script>
     <script src="{{ asset('main/js/gsap/ScrollTrigger.min.js') }}"></script>
-    <script src="https://templates.iqonic.design/gigz/html/dist/assets/js/gsap-init.js"></script>
+    <script src="{{ asset('main/js/gsap/gsap-init.js') }}"></script>
     
     <!-- Form Wizard Script -->
     <script src="{{ asset('main/js/plugins/form-wizard.js') }}"></script>

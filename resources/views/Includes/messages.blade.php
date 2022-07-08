@@ -8,20 +8,20 @@
 
 @if(Session::has('errorMessage'))
   <div class="alert alert-danger">
-    {{Session::get('errorMessage')}}
+    <{{Session::get('errorMessage')}}
   </div>
    {{Session::forget('errorMessage')}}
 @endif
 
 @if(count($errors)>0)
-    <div class="alert alert-danger col-md-12">
-        <div class="col-md-12" style="font-size: 12px;">
-            <ul>
+    <!-- <div class="alert alert-danger"> -->
+          <p class="bg-danger text-default">
+            <ul style="list-style-type:none;"class="bg-danger text-default">
                 @foreach($errors->all() as $error)
                 <li>{{$error}}</li>
                 @endforeach
             </ul>
-        </div>
-    </div>
+          </p>
+    <!-- </div> -->
     <div class="clearfix"></div>
 @endif

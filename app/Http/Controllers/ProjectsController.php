@@ -20,7 +20,11 @@ class ProjectsController extends Controller
 
 
     public function projects(){
-        $data = ["page" => "project"];
+        $projects = ProjectsModel::all();
+        $data = [
+            "page" => "project", 
+            "projects" => $projects
+        ];
         return view('App.Projects.project', $data);
     }
 
@@ -59,7 +63,8 @@ class ProjectsController extends Controller
     }
 
     public function createProject(){
-        return view('App.Projects.create-project');
+        $data = ["page" => "project"];
+        return view('App.Projects.create-project', $data);
     }
 
 

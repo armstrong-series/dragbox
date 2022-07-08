@@ -3,19 +3,7 @@
  @section('content')
     <main class="main-content">
     @include('Includes.newheader')  
-      <div class="nav-scroller ">
-        <nav class="nav nav-underline bg-soft-primary pb-0" aria-label="Secondary navigation">
-          <div class="d-flex" id="head-check">
-            <a class="nav-link"  href="#" id="all" data-title="All">All</a>
-            <a class="nav-link" href="#" id="graphic" data-title="Graphic & Design">Graphic & Design</a>
-            <a class="nav-link" href="https://templates.iqonic.design/gigz/html/dist/landing/product.html?id=writing" id="writing" data-title="Writing & Translation">Writing & Translation</a>
-            <a class="nav-link" href="https://templates.iqonic.design/gigz/html/dist/landing/product.html?id=video" id="video" data-title="Video & Animation">Video & Animation</a>
-            <a class="nav-link" href="https://templates.iqonic.design/gigz/html/dist/landing/product.html?id=music" id="music" data-title="Music & Audio">Music & Audio</a>
-            <a class="nav-link" href="https://templates.iqonic.design/gigz/html/dist/landing/product.html?id=business" id="business" data-title="Business">Business</a>
-          </div>
-        </nav>
-      </div>      <!--Nav End-->
-
+      
         <div class="container">
             <div class="row margin-top">
                 <div class="col-lg-12 position-relative">

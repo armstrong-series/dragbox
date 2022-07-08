@@ -64,7 +64,7 @@
     <!-- GSAP Animation -->
     <script src="{{ asset('main/js/gsap/gsap.min.js') }}"></script>
     <script src="{{ asset('main/js/gsap/ScrollTrigger.min.js') }}"></script>
-    <script src="https://templates.iqonic.design/gigz/html/dist/assets/js/gsap-init.js"></script>
+    <script src="{{ asset('main/js/gsap/gsap-init.js') }}"></script>
     
     <!-- Form Wizard Script -->
     <script src="{{ asset('main/js/plugins/form-wizard.js') }}"></script>

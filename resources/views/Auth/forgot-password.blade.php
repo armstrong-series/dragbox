@@ -12,7 +12,7 @@
     <title>Dragbox | Forgot Password</title>
 
 	<!-- // Favicon -->
-    <link href="{{ asset('Auth/images/favicon.png') }}" rel="icon">
+    <link href="{{ asset('dragbox.png')}}" rel="icon">
 	<!-- Favicon // -->
 
 	<!-- // Google Web Fonts -->
@@ -34,49 +34,21 @@
 	<main class="d-flex">
 		<div class="container main-container">
 			<div class="row nm-row">
-				<!-- <div class="col-lg-7 nm-bgi d-none d-lg-flex">
-					<div class="overlay">
-						<div class="hero-item">
-							<a href="#" aria-label="Dragbox">
-								<img src="{{ asset('Auth/images/logoReversed.png') }}" alt="Logo">
-							</a>
-						</div>
-						<div class="hero-item hero-item-1">
-							<h2>Go all the way.</h2>
-							<h2>Don't give up. Ever.</h2>
-							<h2>It's that simple.</h2>
-						</div>	
-						<ul class="hero-item">
-							<li>
-                                <a href="{{ route('frontend.home') }}"><i class="fas fa-home"></i>Home</a>
-                            </li>
-							
-						</ul>
-					</div>
-				</div> -->
-				<div class="col-lg-5 nm-mb-1 nm-mb-md-1 nm-aic">
+			
+				<div class="col-md-5">
 					<div class="card">
 						<div class="card-content">
-							<div class="header">
-								<p class="h2">Forgot Password</p>
 							
-							</div>
-
-							<form method="post" action="#">
+							<form method="post" action="{{ route('auth.recover-password') }}">
                               @csrf
 								<div class="form-group">
-									<label for="inputEmail">Email</label>
+									<!-- <label for="inputEmail">Email</label> -->
 									<div class="input-group nm-gp">
-										<span class="nm-gp-pp"><i class="fas fa-envelope-open"></i></span>
-										<input id="inputEmail" name="email" class="form-control" type="email" tabindex="1" placeholder="Enter your email">
+										<input id="inputEmail" name="email" class="form-control" type="email" tabindex="1" placeholder="Enter your  account email">
 									</div>
 								</div>	
+								@include('Includes.messages')
 								<div class="d-flex nm-jcb nm-mb-1 nm-mt-1">
-									<div class="nm-control nm-checkbox">
-										<input id="temsAndConditions"class="nm-control-input" type="checkbox">
-										<label class="nm-control-label" for="temsAndConditions">Remember me</label>
-									</div>
-
 									<a class="nm-ft-b" href="{{ route('login') }}">Remember?</a>
 								</div>
 								<button type="submit" class="btn btn-block btn-primary nm-btn">Proceed</button>

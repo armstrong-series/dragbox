@@ -12,7 +12,7 @@
     <title>Dragbox | Account</title>
 
 	<!-- // Favicon -->
-    <link href="{{ asset('Auth/images/favicon.png') }}" rel="icon">
+    <link href="{{ asset('dragbox.png')}}" rel="icon">
 	<!-- Favicon // -->
 
 	<!-- // Google Web Fonts -->
@@ -66,7 +66,7 @@
 							<form method="post" action="{{ route('auth.login.account') }}">
                               @csrf
 								<div class="form-group">
-									<label for="inputEmail">Email</label>
+									<!-- <label for="inputEmail">Email</label>s -->
 									<div class="input-group nm-gp">
 										<span class="nm-gp-pp"><i class="fas fa-envelope-open"></i></span>
 										<input id="inputEmail" name="email" class="form-control" type="email" tabindex="1" placeholder="Your email">
@@ -74,7 +74,7 @@
 								</div>	
 
 								<div class="form-group">
-									<label for="inputPassword">Password</label>
+									
 									<div class="input-group nm-gp">
 										<span class="nm-gp-pp"><i class="fas fa-lock"></i></span>
 										<input id="inputPassword" name="password" class="form-control" type="password" tabindex="2" placeholder="Enter your password">

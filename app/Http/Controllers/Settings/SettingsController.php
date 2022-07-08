@@ -31,4 +31,17 @@ class SettingsController extends Controller
         }
     }
 
+
+    public function settings(Request $request){
+        try {
+            
+            $data = [
+                'page' => 'profile'
+            ];
+            return view('Settings.settings', $data);
+        } catch (Exception $error) {
+            Log::info("errorMessage". $error->getMessage());
+        }
+    }
+
 }

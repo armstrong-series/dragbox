@@ -7,13 +7,19 @@
     <main class="main-content" id="usermanagement">
       @include('Includes.newheader')
       <div class="conatiner-fluid content-inner mt-6 py-0">
-      <div class="row">
+            <header>
+               <div class="pb-2 float-end">
+                  <a href="#" class="btn btn-sm btn-primary">Add User &nbsp;<i class="fas fa-user-plus"></i></a>
+               </div>
+            </header>
+         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-3"  v-for="(userData, index) in getUsers" >
                <div class="card">
-                 <a href="javascript:void(0);" @click="deleteUser(index)"><img src="{{ asset('users.png')}}" class="card-img-top"  alt="#"></a>
+                 <a href="javascript:void(0);" @click="deleteUser(index)"><img src="{{ asset('users.png')}}" width="50" height="100" class="card-img-top p-3" alt="#"></a>
                   <div class="card-body">
-                     <h5 v-cloak class="card-title text-center">@{{ userData.name }}</h5>
-                     <a  v-cloak href="#" @click="selectUser(index)" data-bs-target="#editMember" data-bs-toggle="modal"class="btn btn-sm btn-outline-primary">@{{ userData.email }}</a>
+                     <h6 v-cloak class="card-title text-center">@{{ userData.name }}</h6>
+                     <a v-cloak href="#" @click="selectUser(index)" data-bs-target="#editMember" data-bs-toggle="modal"class="btn btn-sm btn-outline-primary"><small>@{{ userData.email }}</small></a>
+
                   </div>
                </div>
             </div>
